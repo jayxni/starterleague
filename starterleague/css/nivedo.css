@@ -1,13 +1,11 @@
+/* layout */
+
 html, body {
 	background-image:url('http://i.imgur.com/KRlHAx9.jpg');
 	background-color:#ffffff;
 	margin:0;
 	padding:0;
 	height:100%;
-}
-h1 {
-	font: 25px Courier, serif;
-	line-height: 30px;
 }
 .page-container {
 	min-height:100%;
@@ -21,6 +19,10 @@ h1 {
 }
 .column-narrow {
 	max-width: 90%;
+}
+.column-narrow h1 {
+	font: 25px Courier, serif;
+	line-height: 30px;
 }
 .navbar-inner {
 	opacity: 0.75; /* opacity [0-1] */
@@ -68,7 +70,6 @@ h1 {
 /* text layout */
 
 .bio-text {
-	margin-left:50px;
 	font: 12px Courier, serif;
 }
 .body-text {
@@ -86,7 +87,7 @@ h1 {
 	color:#cdfeff;
 }
 
-/* Social and icons */
+/* Social and icons, spirited for extra fun! */
 
 .social { 
 	list-style:none;
@@ -104,40 +105,20 @@ h1 {
 	position:relative;
 	margin-right:10px;
 }
-.facebook-soc { 
+.social-icon {
 	background-image:url("http://i.imgur.com/mo4iFRr.png"); 
-	background-position: -10px -10px;
 }
-.twitter-soc { 
-	background-image:url("http://i.imgur.com/mo4iFRr.png"); 
-	background-position: -10px -78px;
-}
-.google-soc { 
-	background-image:url("http://i.imgur.com/mo4iFRr.png"); 
-	background-position: -10px -146px;
-}
-.linkedin-soc { 
-	background-image:url("http://i.imgur.com/mo4iFRr.png"); 
-	background-position: -10px -214px;
-}
-.facebook-soc:hover { 
-	background-image:url("http://i.imgur.com/mo4iFRr.png"); 
-	background-position: -75px -10px;
-}
-.twitter-soc:hover { 
-	background-image:url("http://i.imgur.com/mo4iFRr.png"); 
-	background-position: -75px -78px;
-}
-.google-soc:hover { 
-	background-image:url("http://i.imgur.com/mo4iFRr.png"); 
-	background-position: -75px -146px;
-}
-.linkedin-soc:hover { 
-	background-image:url("http://i.imgur.com/mo4iFRr.png"); 
-	background-position: -75px -214px;
-}
+.facebook-soc       { background-position: -10px -10px; }
+.twitter-soc        { background-position: -10px -78px; }
+.google-soc         { background-position: -10px -146px; }
+.linkedin-soc       { background-position: -10px -214px; }
+.facebook-soc:hover { background-position: -75px -10px; }
+.twitter-soc:hover  { background-position: -75px -78px; }
+.google-soc:hover   { background-position: -75px -146px; }
+.linkedin-soc:hover { background-position: -75px -214px; }
 
 /* alerts */
+
 .alert-nivedo {
 	font: 12px Courier New, serif;
   padding: 10px 14px 10px 14px;
