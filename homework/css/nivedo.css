@@ -24,18 +24,23 @@ html, body {
 	font: 25px Courier, serif;
 	line-height: 30px;
 }
+.navbar-nivedo {
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.65);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.65);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.65);
+}
 .navbar-inner {
 	opacity: 0.75; /* opacity [0-1] */
-  -moz-opacity: 0.75; /* opacity [0-1] */
-  -webkit-opacity: 0.75; /* opacity [0-1] */
-  background: #4de5eb; /* Old browsers */
-  background: -moz-linear-gradient(top,  #4de5eb 0%, #009bdb 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4de5eb), color-stop(100%,#009bdb)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #4dc5e3 0%,#009bdb 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #4de5eb 0%,#009bdb 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #4de5eb 0%,#009bdb 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #4de5eb 0%,#009bdb 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4de5eb', endColorstr='#009bdb',GradientType=0 ); /* IE6-8 */
+	-moz-opacity: 0.75; /* opacity [0-1] */
+	-webkit-opacity: 0.75; /* opacity [0-1] */
+	background: #4de5eb; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4de5eb 0%, #127ab0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4de5eb), color-stop(100%,#127ab0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4de5eb 0%,#127ab0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4de5eb 0%,#127ab0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4de5eb 0%,#127ab0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4de5eb 0%,#127ab0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4de5eb', endColorstr='#127ab0',GradientType=0 ); /* IE6-8 */
 }
 .nav-nivedo {
 	list-style:none;
@@ -53,7 +58,7 @@ html, body {
 }
 .nav-nivedo li a:hover {
 	color: #127ab0;
-  text-decoration: none;
+	text-decoration: none;
 }
 .footer {
 	position:absolute;
@@ -125,13 +130,13 @@ html, body {
 
 .alert-nivedo {
 	font: 12px Courier New, serif;
-  padding: 10px 14px 10px 14px;
-  margin-bottom: 20px;
-  background-color: rgba(255, 255, 173, 0.5);
-  border: 2px solid #009bdb;
-  -webkit-border-radius: 15px;
-     -moz-border-radius: 15px;
-          border-radius: 15px;
+	padding: 10px 14px 10px 14px;
+	margin-bottom: 20px;
+	background-color: rgba(255, 255, 173, 0.5);
+	border: 2px solid #009bdb;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 .alert-nivedo-info {
 	background-color: rgba(173, 227, 255, 0.5);
