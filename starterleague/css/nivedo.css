@@ -51,6 +51,10 @@ html, body {
 	font: 14px Courier, serif;
 	color:#ffffff;
 }
+.nav-nivedo li a:hover {
+	color: #127ab0;
+  text-decoration: none;
+}
 .footer {
 	position:absolute;
 	bottom:0;
