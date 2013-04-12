@@ -77,6 +77,15 @@ html, body {
 	background-size:300px 300px;
 }
 
+.group:before,
+.group:after {
+	content: "";
+	display: block;
+}
+.group:after {
+	clear:both;
+}
+
 /* text layout */
 
 .bio-text {
@@ -101,9 +110,7 @@ html, body {
 
 .social { 
 	list-style:none;
-	margin-left:0px;
-	margin-top:30px;
-	margin-bottom:100px;
+	margin: 30px 0 30px 0;
 }
 .social li { 
 	float:left; 
