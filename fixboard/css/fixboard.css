@@ -13,7 +13,7 @@ html, body {
 .container-narrow {
   margin-right: auto;
   margin-left: auto;
-  max-width: 800px;
+  max-width: 900px;
   padding: 50px 10px 100px 10px; /* 50 px for header, 100 px is for footer */
 }
 .column-narrow {
@@ -24,7 +24,7 @@ html, body {
 	padding: 10px 0 50px 0;
 }
 .column-narrow h2 {
-	font: 25px Avenir, sans-serif;
+	font: 30px Avenir, sans-serif;
 	font-weight: bold;
 	padding-bottom: 10px;
 }
@@ -33,14 +33,14 @@ html, body {
 	color: #a2a2a2;
 }
 legend {
-	font: 20px Avenir, sans-serif;
+	font: 16px Avenir, sans-serif;
 	color: #a2a2a2;
 }
 .input-fbreg {
-	min-width:80%;
+	min-width:96%;
 }
 .btn-fbreg {
-	min-width:84%;
+	min-width:100%;
 }
 .signup-form {
 	margin: 0 auto;
