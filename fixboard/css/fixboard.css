@@ -1,0 +1,128 @@
+/* layout */
+
+html, body {
+	background-color:#ffffff;
+	margin:0;
+	padding:0;
+	height:100%;
+}
+.page-container {
+	min-height:100%;
+	position:relative;
+}
+.container-narrow {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 900px;
+  padding: 50px 10px 100px 10px; /* 50 px for header, 100 px is for footer */
+}
+.column-narrow {
+	max-width: 90%;
+}
+.column-narrow h1 {
+	font: 40px Geneva, sans-serif;
+	padding: 10px 0 50px 0;
+}
+.column-narrow h2 {
+	font: 25px Avenir, sans-serif;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.column-narrow h3 {
+	font: 20px Avenir, sans-serif;
+	color: #a2a2a2;
+}
+legend {
+	font: 20px Avenir, sans-serif;
+	color: #a2a2a2;
+}
+.input-fbreg {
+	min-width:80%;
+}
+.btn-fbreg {
+	min-width:84%;
+}
+.signup-form {
+	margin: 0 auto;
+}
+.group:before,
+.group:after {
+	content: "";
+	display: block;
+}
+.group:after {
+	clear:both;
+}
+
+/* text layout */
+
+.bio-text {
+	font: 12px Courier, serif;
+}
+.body-text {
+	color:#000000;
+}
+.focus-text {
+	font-weight: bold;
+	color:#009bdb;
+}
+.code-text {
+	font-weight: bold;
+	color:#ff9000;
+}
+.active-text {
+	color:#cdfeff;
+}
+
+/* Social and icons, spirited for extra fun! */
+
+.social { 
+	list-style:none;
+	margin: 30px 0 30px 0;
+}
+.social li { 
+	float:left; 
+}
+.social li a { 
+	display:block;
+	width:48px;
+	height:48px;
+	position:relative;
+	margin-right:10px;
+}
+.social-icon {
+	background-image:url("http://i.imgur.com/mo4iFRr.png"); 
+}
+.facebook-soc       { background-position: -10px -10px; }
+.twitter-soc        { background-position: -10px -78px; }
+.google-soc         { background-position: -10px -146px; }
+.linkedin-soc       { background-position: -10px -214px; }
+.facebook-soc:hover { background-position: -75px -10px; }
+.twitter-soc:hover  { background-position: -75px -78px; }
+.google-soc:hover   { background-position: -75px -146px; }
+.linkedin-soc:hover { background-position: -75px -214px; }
+
+/* alerts */
+
+.alert-nivedo {
+	font: 12px Courier New, serif;
+	padding: 10px 14px 10px 14px;
+	margin-bottom: 20px;
+	background-color: rgba(255, 255, 173, 0.5);
+	border: 2px solid #009bdb;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+.alert-nivedo-info {
+	background-color: rgba(173, 227, 255, 0.5);
+}
+.alert-nivedo-warn {
+	background-color: rgba(255, 221, 177, 0.5);
+}
+.alert-nivedo-success {
+	background-color: rgba(156, 255, 172, 0.5);
+}
+.alert-nivedo-error {
+	background-color: rgba(255, 145, 145, 0.5);
+}
