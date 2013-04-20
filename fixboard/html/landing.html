@@ -18,15 +18,29 @@
 				<div class="row-fluid">
 					<div class="span5 column-narrow">
 						<h2>Simple mobile solutions for the practical fix-it business.</h2>
-						<form>
-							<fieldset>
-								<legend>Sign up for free to connect with new customers.</legend>
-								<input type="text" class="input-fbreg" placeholder="Email">
-								<input type="password" class="input-fbreg" placeholder="Password">
-								<input type="text" class="input-fbreg" placeholder="First name">
-								<button class="btn btn-warning btn-fbreg btn-large" type="submit">Sign up now!</button>
-							</fieldset>
-						</form>
+							<form class="reg-form" id="form_wrapper">
+								<fieldset class="signup-form-1 active">
+									<legend>Sign up for free to connect with new customers.</legend>
+									<input type="text" class="input-fbreg" placeholder="Email">
+									<input type="password" class="input-fbreg" placeholder="Password">
+									<input type="text" class="input-fbreg" placeholder="First name">
+									<button class="btn btn-info pad-fbreg btn-large btn-cont" type="submit">Continue</button>
+								</fieldset>
+								<fieldset class="signup-form-2 next">
+									<legend>Tell us more about your business.</legend>
+									<input type="text" class="input-fbreg" placeholder="Business name">
+									<input type="password" class="input-fbreg" placeholder="Telephone Number">
+									<select class="pad-fbreg">
+										<option>Occupation</option>
+										<option>Handyman</option>
+										<option>Electrician</option>
+										<option>Plumber</option>
+										<option>Contractor</option>
+									</select>
+									<button class="btn btn-info pad-fbreg btn-large btn-create" type="submit">Create Account</button>
+								</fieldset>
+							</form>
+						</div>
 					</div>
 					<div class="span7 column-narrow">
 						
@@ -34,6 +48,29 @@
 				</div>
 			</div>
 		</div>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var $form_wrapper = $('#form_wrapper'),
+				$currentFset = $form_wrapper.children('fieldset.active'),
+				$nextFset    = $form_wrapper.children('fieldset.next'),
+				$btn_cont = $currentFset.children('button.btn-cont');
+
+				$btn_cont.bind('click',function(e){
+					e.preventDefault();
+					$currentFset.fadeOut(400,function(){
+						$currentFset.removeClass('active');
+						$nextFset.removeClass('next');
+						$nextFset.fadeIn(400);
+						$nextFset.addClass('active');
+						
+					});
+				});
+			});
+		</script>
 	</body>
+	
+
 
 </html>

@@ -24,22 +24,28 @@ html, body {
 	padding: 10px 0 50px 0;
 }
 .column-narrow h2 {
-	font: 30px Avenir, sans-serif;
+	font-family: Avenir, "agb","helvetica neue",helvetica,arial,sans-serif;
+	font-size: 30px;
 	font-weight: bold;
 	padding-bottom: 10px;
 }
 .column-narrow h3 {
-	font: 20px Avenir, sans-serif;
+	font-family: Avenir, "agb","helvetica neue",helvetica,arial,sans-serif;
+	font-size: 20px;
 	color: #a2a2a2;
 }
 legend {
-	font: 16px Avenir, sans-serif;
+	font-family: Avenir, "agb","helvetica neue",helvetica,arial,sans-serif;
+	font-size: 16px;
+	color: #a2a2a2;
+}
+option .default {
 	color: #a2a2a2;
 }
 .input-fbreg {
 	min-width:96%;
 }
-.btn-fbreg {
+.pad-fbreg {
 	min-width:100%;
 }
 .signup-form {
@@ -52,6 +58,13 @@ legend {
 }
 .group:after {
 	clear:both;
+}
+
+.reg-form fieldset {
+	display: none;
+}
+fieldset.active {
+	display: block;
 }
 
 /* text layout */
