@@ -19,17 +19,17 @@
 					<div class="span5 column-narrow">
 						<h2>Simple mobile solutions for the practical fix-it business.</h2>
 							<form class="reg-form" id="form_wrapper">
-								<fieldset class="signup-form-1 active">
+								<fieldset id="signup-form-1" class="active">
 									<legend>Sign up for free to connect with new customers.</legend>
-									<input type="text" class="input-fbreg" placeholder="Email">
+									<input type="email" class="input-fbreg" placeholder="Email">
 									<input type="password" class="input-fbreg" placeholder="Password">
 									<input type="text" class="input-fbreg" placeholder="First name">
 									<button class="btn btn-info pad-fbreg btn-large btn-cont" type="submit">Continue</button>
 								</fieldset>
-								<fieldset class="signup-form-2 next">
+								<fieldset id="signup-form-2">
 									<legend>Tell us more about your business.</legend>
 									<input type="text" class="input-fbreg" placeholder="Business name">
-									<input type="password" class="input-fbreg" placeholder="Telephone Number">
+									<input type="tel" class="input-fbreg" placeholder="Telephone Number">
 									<select class="pad-fbreg">
 										<option>Occupation</option>
 										<option>Handyman</option>
@@ -53,19 +53,61 @@
 		<script type="text/javascript">
 			$(function() {
 				var $form_wrapper = $('#form_wrapper'),
-				$currentFset = $form_wrapper.children('fieldset.active'),
-				$nextFset    = $form_wrapper.children('fieldset.next'),
-				$btn_cont = $currentFset.children('button.btn-cont');
+				$btn_cont = $('#signup-form-1').children('button.btn-cont');
+				$btn_create = $('#signup-form-2').children('button.btn-create');
 
 				$btn_cont.bind('click',function(e){
 					e.preventDefault();
-					$currentFset.fadeOut(400,function(){
-						$currentFset.removeClass('active');
-						$nextFset.removeClass('next');
-						$nextFset.fadeIn(400);
-						$nextFset.addClass('active');
-						
-					});
+
+					// Check for errors
+    				var errors = false;
+    				$('#signup-form-1 input').removeClass('reg-error');
+
+				    $('#signup-form-1 input').each(function(){
+				      if($(this).val() == '') {
+				        $(this).addClass('reg-error');
+				        errors = true;
+				      }
+				    });
+
+    				if(!errors) {
+						$('#signup-form-1').fadeOut(400,function(){
+							$('#signup-form-1').removeClass('active');
+							$('#signup-form-2').fadeIn(400);
+							$('#signup-form-2').addClass('active');
+						});
+					}
+				});
+
+				$btn_create.bind('click',function(e){
+					e.preventDefault();
+
+					// Check for errors
+    				var errors = false;
+    				$('#signup-form-2 input').removeClass('reg-error');
+    				$('#signup-form-2 select').removeClass('reg-error');
+
+				    $('#signup-form-2 input').each(function(){
+				      if($(this).val() == '') {
+				        $(this).addClass('reg-error');
+				        errors = true;
+				      }
+				    });
+
+				    $('#signup-form-2 select').each(function(){
+				      if($(this).val() == 'Occupation') {
+				        $(this).addClass('reg-error');
+				        errors = true;
+				      }
+				    });
+
+    				if(!errors) {
+						$('#signup-form-2').fadeOut(400,function(){
+							$('#signup-form-2').removeClass('active');
+							$('#signup-form-1').fadeIn(400);
+							$('#signup-form-1').addClass('active');
+						});
+					}
 				});
 			});
 		</script>
