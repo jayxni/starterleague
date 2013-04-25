@@ -14,7 +14,7 @@ html, body {
 .container-narrow {
 	margin-right: auto;
 	margin-left: auto;
-	max-width: 600px;
+	max-width: 800px;
 	padding: 60px 10px 100px 10px; /* header and footer */
 }
 .column-narrow {
@@ -24,6 +24,31 @@ html, body {
 	font: 25px Courier, serif;
 	line-height: 30px;
 }
+.blog-date {
+	text-align: right;
+	padding-right: 15px;
+}
+.blog-content {
+	font: 14px Courier, serif;
+	line-height: 21px;
+}
+.blog-content h1 {
+	font: 25px Courier, serif;
+	font-weight: bold;
+	color:#ff9000;
+}
+.blog-content p+p {
+	text-indent: 3em;
+}
+.link-demo a[href^='http:']:after {
+  content: url("http://p.yusukekamiyamane.com/icons/search/fugue/icons/ui-tab--arrow.png");
+  padding-left: 4px;
+}
+.link-demo a[href^='https:']:after {
+  content: url("http://p.yusukekamiyamane.com/icons/search/fugue/icons/lock.png");
+  padding-left: 4px;
+}
+
 .navbar-nivedo {
 	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.65);
 	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.65);
@@ -104,6 +129,9 @@ footer {
 }
 .active-text {
 	color:#cdfeff;
+}
+.date-text {
+	font: 15px Courier, serif;
 }
 
 /* Social and icons, spirited for extra fun! */
