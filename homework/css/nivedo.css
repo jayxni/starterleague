@@ -21,6 +21,8 @@ html, body {
 	max-width: 90%;
 }
 .column-narrow h1 {
+	padding-top: 0em;
+	margin-top: 0em;
 	font: 25px Courier, serif;
 	line-height: 30px;
 }
